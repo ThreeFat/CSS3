@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 边框</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #F7F7F7;
+		}
+
+		.border-radius {
+			width: 200px;
+			height: 200px;
+			margin: 100px auto;
+			background-color: green;
+			
+			/*属性值可是1~4个参数*/
+
+			/*四周*/
+			/*border-radius: 50px;*/
+
+			/**/
+			/*border-radius: 50px 0 0 0;*/
+
+			/*左上/右下 右上/左下*/
+			border-radius: 50px 0;
+
+			/*border-radius: 0 50px;*/
+
+			/*border-radius: 20px 40px 40px 30px;*/
+
+			/*这写法 左上、右上/左下、右下*/
+			/*border-radius: 20px 40px 30px;*/
+
+			/*border-radius的属性值是指一个“模拟圆的半径”*/
+			/*通过调整这个半径值，可以改变圆角的度数*/
+
+			/*椭圆和正圆关系？*/
+			/*正圆实际是上一个特殊的椭圆*/
+
+			/*border-radius: 5px 10px 5px 10px;*/
+
+			/*如果想细节的调整一个盒子的圆角，需要有8个参数*/
+			/*将这个8参数通过 / 分成 4 对 4 两部分*/
+			/*前面的部分 表示 四个角的水平半径，后面部分表示 垂直的半径*/
+			border-radius: 100px 0px 0px 0px / 50px 0px 0px 0px;
+
+
+			/*通常在具体使用中一般采用简写方式*/
+			/*比如不写 / 表示水平和垂直相等*/
+			/*border-radius: 100px 0px 0px 0px;*/
+
+			/*还有更简洁的方法*/
+			/*border-radius: 50px;*/
+
+			/*?*/
+
+			/*四个角*/
+			/*border-radius: 50px;*/
+			
+			/*两个参数 第一个参数 1和3 第二个参数 2和4*/
+			/*border-radius: 20px 60px;*/
+
+			/*三个参数 第一个参数 1 第二个参数 2和4 第三个参数 3*/
+			/*border-radius: 10px 40px 80px;*/
+
+			/*四个参数 分别对应 1、2、3、4*/
+			/*border-radius: 10px 20px 30px 40px;*/
+
+			/*水平和垂直不相等*/
+			/*border-radius: 10px 10px / 10px 10px;*/
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="border-radius"></div>
+</body>
+</html>

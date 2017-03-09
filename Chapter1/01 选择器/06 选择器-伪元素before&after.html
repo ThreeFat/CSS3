@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器 - 伪元素</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: '微软雅黑';
+			background-color: #F7F7F7;
+		}
+
+		li {
+			font-size: 20px;
+			/*line-height: 40px;*/
+			list-style: none;
+		}
+
+
+		li .before,
+		li .after {
+			display: block;
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			margin: 10px;
+		}
+
+		/*伪元素选择器 ::*/
+
+		/*::before ::after 会分别在元素的最前面和最后面添加一个元素*/
+		/*并且我们可像定义一个正常元素一样去定义它的样式*/
+		/*必须要有content ，content  可以写入文本内容，通常给空*/
+		/*新创建的元素是一个行内元素，在使用时通常会转成块元素，但并不是必须要转*/
+
+		li::before {
+			content: 'itcast';
+			/*display: block;*/
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+		}
+		
+		li::after {
+			content: '';
+			/*display: block;*/
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+		}
+
+		.add {
+			display: block;
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+		}
+
+
+		/*CSS2里伪元素是用:来表示的，但是低版本只有:after :before两个伪元素*/
+
+		/*CSS3里新增了更多的伪元元素，并且约束伪元素使用::来规范，所以在CSS3里*/
+		/*也就变成了 ::after ::before*/
+
+		/*支持CSS3伪元素的浏览器，是可以正常识虽::*/
+		/*假如遇到:伪元素，会自动转成::*/
+		/*是为了做一个兼容处理*/
+
+		/*将来开发中如何写？*/
+		/*: 采用的*/
+		/*:: 不建议采用*/
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<span class="before">原始添加的</span>
+			<span class="add"></span>
+			<span class="after">原始添加的后面的</span>
+		</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器 - 伪类</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #F7F7F7;
+		}
+
+		ul {
+			width: 560px;
+			padding: 0;
+			margin: 100px auto;
+			list-style: none;
+			border-right: 1px solid #CCC;
+			border-bottom: 1px solid #CCC;
+			overflow: hidden;
+		}
+
+		li {
+			
+		}
+		
+		/*伪类选择器的语法是 :*/
+		
+		/*a:hover{}*/
+
+		/*伪类选择器可以让我们更灵活的设置样式*/
+
+
+		/*child 是相对当li的父元素 很重要*/
+		/*li:first-child {
+			color: red;
+		}
+
+		li:last-child {
+			color: blue;
+		}
+
+		li:nth-child(7) {
+			color: red;
+		}
+
+		li:nth-child(10) {
+			color: blue;
+		}*/
+
+		/*n取值范围是0, 1, 2, ...*/
+
+		/*li:nth-child(7n+0) {
+			color: green;
+		}*/
+		
+		/*奇数*/
+		/*li:nth-child(2n+1) {
+			color: red;
+		}*/
+
+		/*li:nth-child(odd) {
+			color: red;
+		}*/
+		/*偶数*/
+		/*li:nth-child(2n) {
+			color: blue;
+		}*/
+
+		/*li:nth-child(even) {
+			color: blue;
+		}*/
+
+		/*li:nth-child(-n+5) {
+			color: red;
+		}*/
+
+		/*必须要符合此格式*/
+		/*kn+b*/
+		
+		/*错误的*/
+		/*li:nth-child(5-n) {
+			color: red;
+		}*/
+
+		/*li:nth-last-child(4) {
+			color: red;
+		}*/
+
+		li:nth-last-child(-n+5) {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<!-- <p>没法</p> -->
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+		<li>11</li>
+		<li>12</li>
+		<li>13</li>
+		<li>14</li>
+		<li>15</li>
+		<li>16</li>
+		<li>17</li>
+		<li>18</li>
+		<li>19</li>
+		<li>20</li>
+		<li>21</li>
+		<li>22</li>
+		<li>23</li>
+		<li>24</li>
+		<li>25</li>
+		<li>26</li>
+		<li>27</li>
+		<li>28</li>
+		<li>29</li>
+		<li>30</li>
+		<li>31</li>
+		<li>32</li>
+		<li>33</li>
+		<li>34</li>
+		<li>35</li>
+	</ul>
+</body>
+</html>

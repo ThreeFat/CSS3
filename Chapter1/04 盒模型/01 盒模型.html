@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS盒模型</title>
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+			padding: 50px;
+			margin: 100px auto;
+			border: 20px solid orange;
+			background: red;
+			
+			/**/
+			/*box-sizing: border-box;*/
+
+			/*所谓盒子模型是由content padding border构成*/
+			/*计算盒子大小时 content + padding + border*/
+
+			/*CSS3有一个新的属性可以改变计算盒子大小的方式*/
+			/*根据box-sizing属性值可以分成两种计算方式*/
+			
+			/*默认计算方式 content = width  (width + padding + border) */
+			/*box-sizing: content-box;*/
+
+			/*计算方式 content = width - padding - border (content + padding + border)*/
+			box-sizing: border-box;
+
+
+			
+			/*盒子整体大小
+			
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box {
+			width: 200px;
+			height: 200px;
+
+			border: 1px solid #CCC;
+
+			border-radius: 10px;
+			
+			/*只有chrome认识*/
+			-webkit-border-radius: 10px;
+			
+			/*本应该是火狐才能认识*/
+			-moz-border-radius: 10px;
+
+			/*本应该是IE认识 Microsoft*/
+			-ms-border-radius: 10px;
+			
+			/*欧朋浏览器*/
+			-o-border-radius: 10px;
+			
+			/*为什么要有一个特定的前缀出现*/
+			
+			/*浏览器开发商在开发浏览器时，需要支持一些新CSS属性*/
+			/*在初期阶段，可能部分实现CSS属性支持，但是可是会出现一些BUG*/
+			/*或者一些性能问题，为了解决这样情况，会提前发布一些代的版本*/
+			/*在这些版本上需要加一个特定的前缀才能正常支持，等到浏览器成熟以后*/
+			/*再将正版发布，前缀就可以省略了*/
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
