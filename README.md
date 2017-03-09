@@ -18,7 +18,7 @@
 	:before :after 尽量使用 :after :before
 
 ##	文字阴影 
-	`text-shadow: 2px 2px 5px red; `
+	text-shadow: 2px 2px 5px red; 
 
 ##	边框 border
 	边框圆角 border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
