@@ -1,0 +1,160 @@
+4<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			/*font-family: '微软雅黑';*/
+			font: 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+		}
+
+		img {
+			width: 100%;
+			max-width: 100%;
+			/*display: block;*/
+			vertical-align: middle;
+		}
+
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		.header ul {
+			display: flex;
+		}
+
+		.header li {
+			width: 100%;
+			display: flex;
+		}
+
+		.header li a {
+			flex: 1;
+		}
+
+		.main {
+			padding: 0 5px;
+		}
+
+		.main .item {
+			margin-top: 5px;
+			display: flex;
+			border-radius: 6px;
+			background-color: pink;
+		}
+
+		.main .item .sup {
+			flex: 1;
+		}
+
+		.main .item .sub {
+			flex: 2;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.main .item a {
+			text-align: center;
+			line-height: 45px;
+			/*flex: 1;*/
+			width: 50%;
+			text-decoration: none;
+			color: #FFF;
+			text-shadow: 1px 1px 1px #ccc;
+			border-bottom: 1px solid #FFF;
+			border-left: 1px solid #FFF;
+			box-sizing: border-box;
+		}
+
+		.main .item a:nth-child(3),
+		.main .item a:nth-child(4) {
+			border-bottom: none;
+		}
+
+		.main .item:nth-child(4) a {
+			width: 33.3333%;
+		}
+
+		.main .item:nth-child(4) a:nth-child(3) {
+			border-bottom: 1px solid #FFF;
+		}
+
+		.main .extra {
+			display: flex;
+		}
+
+		.main .extra a {
+			flex: 1;
+		}
+	</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<ul>
+			<li>
+				<a href="javascript:;"><img src="./images/banner.jpg" alt=""></a>
+			</li>
+		</ul>
+	</div>
+	<!-- 主体 -->
+	<div class="main">
+		<section>
+			<div class="item">
+				<div class="sup"></div>
+				<div class="sub">
+					<a href="javascript:;">海外酒店</a>
+					<a href="javascript:;">团购</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="sup"></div>
+				<div class="sub">
+					<a href="javascript:;">海外酒店</a>
+					<a href="javascript:;">团购</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="sup"></div>
+				<div class="sub">
+					<a href="javascript:;">海外酒店</a>
+					<a href="javascript:;">团购</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+				</div>
+			</div>
+			<div class="item">
+				<!-- <div class="sup"></div> -->
+				<div class="sub">
+					<a href="javascript:;">海外酒店</a>
+					<a href="javascript:;">团购</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+				</div>
+			</div>
+		</section>
+		<!-- 其它 -->
+		<div class="extra">
+			<a href="javascript:;">
+				<img src="./images/extra_1.png" alt="">
+			</a>
+			<a href="javascript:;">
+				<img src="./images/extra_2.png" alt="">
+			</a>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="footer"></div>
+</body>
+</html>

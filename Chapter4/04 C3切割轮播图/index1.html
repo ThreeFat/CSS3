@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 3D切割轮播图</title>
+	<style>
+		body {
+			margin: 0;
+			padding-top: 0;
+			background-color: #F7F7F7;
+		}
+
+		ul {
+			/*height: 100%;*/
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.view {
+			width: 560px;
+			height: 300px;
+			margin: 100px auto;
+			border: 1px solid #CCC;
+			position: relative;
+
+		}
+
+		li {
+			position: relative;
+			
+			width: 112px;
+			height:300px;
+			float: left;
+
+			background-color: green;
+			transform-style: preserve-3d;
+			transform: rotateX(10deg);
+			
+		}
+
+		li span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 112px;
+			height: 300px;
+		}
+
+		li span:nth-child(1) {
+			background-color: red;
+			transform: translateZ(150px);
+		}
+
+		li span:nth-child(2) {
+			background-color: blue;
+			transform: rotateX(90deg) translateZ(150px);
+		}
+
+		li span:nth-child(3) {
+			background-color: green;
+			transform: rotateX(180deg) translateZ(150px);
+		}
+
+		li span:nth-child(4) {
+			background-color: yellow;
+			transform: rotateX(270deg) translateZ(150px);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="view">
+		<ul>
+			<li>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</li>
+			<li>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</li>
+			<li>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</li>
+			<li>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</li>
+			<li>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</li>
+		</ul>
+		<a href="javascript:;" class="prev">&lt;</a>
+		<a href="javascript:;" class="next">&gt;</a>
+	</div>
+
+</body>
+</html>
