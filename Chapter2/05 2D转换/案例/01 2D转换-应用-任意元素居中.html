@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 2D转换</title>
+	<style>
+		html, body {
+			height: 100%;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #F7F7F7;
+			position: relative;
+		}
+
+		.layer {
+			width: 250px;
+			height: 100px;
+			background-color: red;
+
+			position: absolute;
+			left: 50%;
+			top: 50%;
+
+			/*margin: -50px 0 0 -125px;*/
+
+			/*位移时设置百分比，相对盒子的大小*/
+			transform: translate(-50%, -50%);
+			/*transform: translate(-125px, -50px);*/
+			
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="layer"></div>
+</body>
+</html>

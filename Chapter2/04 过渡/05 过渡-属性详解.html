@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 过渡</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #F7F7F7;
+
+			position: relative;
+		}
+
+		.transition {
+			width: 200px;
+			height: 200px;
+			background-color: green;
+
+			position: absolute;
+
+			left: 0;
+
+			/*transition: all 1s;*/
+			
+			/*设置需要过渡的属性*/
+			/*transition-property: background-color, left;*/
+			
+			/*设置过渡时间*/
+			/*transition-duration: 2s;*/
+			
+			/*设置过渡的延时*/
+			/*transition-delay: 2s;*/
+			
+			/*过渡执行的速度*/
+			/*transition-timing-function: ease-in-out;*/
+
+			/*第一个时间是执行时间，第二个是延时间*/
+			/*参数间除时间外没有顺序要求*/
+			transition:   linear  all  2s 1s;
+
+			/*transition: 属性 时间 延时 速度*/
+
+
+		}
+
+		.transition:hover  {
+			left: 1000px;
+			background-color: yellow;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="transition"></div>
+</body>
+</html>

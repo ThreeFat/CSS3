@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 过渡</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #F7F7F7;
+		}
+
+		.transition {
+			width: 200px;
+			height: 200px;
+			margin: 50px auto;
+			background-color: green;
+
+			transition: all 3s;
+		}
+
+		/*过渡属性在A,B状态都可以，可根据自已情况来设置*/
+
+		/*过渡可以实大部分属性的过渡，但并不是全部*/
+		.transition:hover {
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="transition"></div>
+</body>
+</html>
