@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 动画</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #F7F7F7;
+		}
+
+		.box {
+			width: 400px;
+			margin: 100px auto;
+		}
+
+		.box img {
+			width: 100%;
+
+			animation: rotate 2s infinite linear;
+		}
+
+		/*首先要定义一个动画序列*/
+		@keyframes rotate {
+			0% {
+				transform: rotateZ(0deg);
+			}
+
+			100% {
+				transform: rotateZ(360deg);
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="./images/fengche.png">
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			/*指定给父盒子*/
+			/*当值越大，效果越不明显，当值越小，效果越明显*/
+			/*perspective: 1000px;*/
+		}
+
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			margin: 100px auto;
+
+			transition: all 1s;
+			transform: perspective(400px) translateZ(0px);
+		}
+
+		.box:hover {
+			/*transform: scale(2);*/
+			
+			/*近大远小*/
+			transform:  perspective(400px) translateZ(200px);
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

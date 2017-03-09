@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #F7F7F7;
+		}
+
+		.pic {
+			width: 600px;
+			height: 400px;
+			margin: 50px auto;
+			border: 1px solid #CCC;
+			background-image: url(./images/2.jpg);
+
+			background-repeat: no-repeat;
+
+			/*background-size: 600px 400px;*/
+			
+			/*百分比相对于盒子自身宽高*/
+			/*background-size: 100% 100%;*/
+
+			/*解决了一个问题，就是背景图片铺满了整个盒子*/
+			/*始终铺满盒子，当某一个边上的宽度或高度不够，图片会被*/
+			/*裁切（溢出）*/
+			/*background-size: cover;*/
+
+			/*保证图片完整显示在盒子中*/
+			/*background-size: contain;*/
+
+		}
+	</style>
+</head>
+<body>
+	<div class="pic"></div>
+</body>
+</html>
